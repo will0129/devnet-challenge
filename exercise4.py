@@ -18,7 +18,7 @@ print(json.dumps(NET_JSON,indent=2))
 ## Hint, if you choose the WRONG IP key from above list (wan1Ip, etc...) 
 ## your code will error out. because not all devices have a Wan Ip... you know?
 ## like a switch
-ping 
+
 meraki_list=NET_JSON
 for device in meraki_list:
 	print(device['model'],device['firmware'],device['lat'])
